@@ -1,13 +1,21 @@
 {
-    "dependencies": {
-        "@tailwindcss/cli": "^4.1.17",
-        "tailwindcss": "^4.1.17",
-        "typescript": "^5.9.3"
-    },
-
+    "name": "albertcheong.github.io",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
     "scripts": {
-        "build:ts": "tsc",
-        "build:css": "tailwindcss -i src/input.css -o dist/output.css --minify",
-        "build": "npm run build:ts --silent && npm run build:css --silent"
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.22",
+        "postcss": "^8.5.6",
+        "tailwindcss": "^4.1.18",
+        "typescript": "~5.9.3",
+        "vite": "^7.2.4"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.18"
     }
 }
