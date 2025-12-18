@@ -9,7 +9,7 @@ const slides: Slide[] = [
         // Intro slide
         content: () => {
             return `
-                <div class="text-center"> 
+                <div class="text-center overflow-x-hidden"> 
                     <h1 class="text-5xl font-bold mb-4
                                sm:text-8xl">
                         Hi, I'm Aelberth
@@ -358,7 +358,7 @@ let currentSlide = 0;
 function App(): void {
     const app = document.querySelector<HTMLDivElement>("#app")!;
     app.innerHTML = `
-        <div class="h-dvh flex flex-col">
+        <div class="h-dvh flex flex-col overflow-x-hidden">
             <div class="flex-1 flex items-center justify-center p-5">
                 ${renderSlides(currentSlide)}
             </div>
